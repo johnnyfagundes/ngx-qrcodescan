@@ -1,6 +1,6 @@
 {
-  "name": "ngx-barcode",
-  "version": "0.0.0",
+  "name": "ngx-qrscan",
+  "version": "0.0.1",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
