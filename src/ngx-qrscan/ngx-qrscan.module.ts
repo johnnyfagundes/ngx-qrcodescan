@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { NgxQrscanComponent } from "./ngx-qrscan.component";
+import { NgxQrscanComponent } from './ngx-qrscan.component';
 
 @NgModule({
   declarations: [

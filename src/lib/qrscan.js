@@ -27,7 +27,7 @@ QRReader.init = () => {
 
 	QRReader.setCanvas();
     var worker = new Worker(baseurl + "assets/decoder.min.js");
-	QRReader.decoder = worker;
+    QRReader.decoder = worker;
 
 	if (!window.iOS) {
 		// Resize webcam according to input
