@@ -1,33 +1,35 @@
 {
-  "name": "ngx-qrcodescan",
-  "license": "MIT",
-  "description": "System to read qr code",
-  "readmeFilename": "README.md",
-  "keywords": [
-    "qrcode",
-    "scanner",
-    "qr reader",
-    "Johnny Fagundes"
+  "_from": "ngx-qrcodescanner",
+  "_id": "ngx-qrcodescanner@0.0.1",
+  "_inBundle": false,
+  "_integrity": "sha512-Q6QgDMI4iv0ZkRSf+HbMWpSAzwuCWTVbT2Ld8Fx2puK0GK7ZQHKpA8e78/SBuEtKaD63zMTRQ6cABY+ShkNjMg==",
+  "_location": "/ngx-qrcodescanner",
+  "_phantomChildren": {
+    "tslib": "1.7.1"
+  },
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "ngx-qrcodescanner",
+    "name": "ngx-qrcodescanner",
+    "escapedName": "ngx-qrcodescanner",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
   ],
-  "tags": [
-    "qrcode",
-    "Johnny Fagundes"
-  ],
-  "version": "0.0.1",
+  "_resolved": "https://registry.npmjs.org/ngx-qrcodescanner/-/ngx-qrcodescanner-0.0.1.tgz",
+  "_shasum": "0147819e62c88a962a18feff3b3173599474c86c",
+  "_spec": "ngx-qrcodescanner",
+  "_where": "C:\\Projetos\\web-eventos\\source",
   "author": {
     "name": "Johnny Fagundes Frota Santos",
-    "email": "fagundesjohnny@gmail.com",
-    "homepage": "https://github.com/johnnyfagundes"
+    "email": "fagundesjohnny@gmail.com"
   },
-  "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build --prod",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
-  },
-  "private": false,
+  "bundleDependencies": false,
   "dependencies": {
     "@angular/animations": "^5.2.0",
     "@angular/common": "^5.2.0",
@@ -44,6 +46,8 @@
     "rxjs": "^5.5.6",
     "zone.js": "^0.8.19"
   },
+  "deprecated": false,
+  "description": "System to read qr code",
   "devDependencies": {
     "@angular/cli": "~1.7.1",
     "@angular/compiler-cli": "^5.2.0",
@@ -63,5 +67,27 @@
     "ts-node": "~4.1.0",
     "tslint": "~5.9.1",
     "typescript": "~2.5.3"
-  }
+  },
+  "keywords": [
+    "qrcode",
+    "scanner",
+    "qr reader",
+    "Johnny Fagundes"
+  ],
+  "license": "MIT",
+  "name": "ngx-qrcodescanner",
+  "private": false,
+  "scripts": {
+    "build": "ng build --prod",
+    "e2e": "ng e2e",
+    "lint": "ng lint",
+    "ng": "ng",
+    "start": "ng serve",
+    "test": "ng test"
+  },
+  "tags": [
+    "qrcode",
+    "Johnny Fagundes"
+  ],
+  "version": "0.0.1"
 }

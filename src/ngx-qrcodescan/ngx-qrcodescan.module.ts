@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { NgxQrcodescanComponent } from './ngx-qrcodescan.component';
+import { NgxQrcodescanService } from "./ngx-qrcodescan.service";
 
 @NgModule({
   declarations: [
@@ -9,7 +10,7 @@ import { NgxQrcodescanComponent } from './ngx-qrcodescan.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [NgxQrcodescanService],
   bootstrap: [NgxQrcodescanComponent],
   exports: [NgxQrcodescanComponent]
 })

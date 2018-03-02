@@ -1,5 +1,9 @@
-import { Component, ElementRef, EventEmitter, Input, OnInit, Output, ViewChild } from '@angular/core';
+import {
+    Component, ElementRef, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges,
+    ViewChild
+} from '@angular/core';
 import * as QRReader from '../lib/qrscan.js';
+import { NgxQrcodescanService } from './ngx-qrcodescan.service';
 
 @Component({
     selector: 'app-ngx-qrcodescan',
@@ -83,25 +87,36 @@ import * as QRReader from '../lib/qrscan.js';
 })
 export class NgxQrcodescanComponent implements  OnInit {
 
+    constructor(
+        private ngxService : NgxQrcodescanService
+    ) {
+
+    }
+
     @ViewChild('video') private video: ElementRef;
-    @Input() public updateTime = 500;
-    @Input() public stopAfterScan = false;
+    @Input() public updateTime: number = 500;
+    @Input() public stopAfterScan: boolean = false;
+    @Input() public destroy: boolean = null;
     @Output() public result = new EventEmitter();
 
     ngOnInit(): void {
-        QRReader.init();
-        setTimeout(() => {
-            this.scan();
-        }, 1000);
+        this.ngxService.start();
     }
+
     public scan() {
         setTimeout(() => {
-            QRReader.scan((result) => {
+            this.ngxService.result((result) => {
                 this.result.emit(result);
                 if (!this.stopAfterScan) {
                     this.scan();
                 }
             });
+            // QRReader.scan((result) => {
+            //     this.result.emit(result);
+            //     if (!this.stopAfterScan) {
+            //         this.scan();
+            //     }
+            // });
         }, this.updateTime);
     }
 }
