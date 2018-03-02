@@ -1,7 +1,24 @@
 {
   "name": "ngx-qrscan",
-  "version": "0.0.1",
   "license": "MIT",
+  "description": "System to read qr code",
+  "readmeFilename": "README.md",
+  "keywords": [
+    "qrcode",
+    "scanner",
+    "qr reader",
+    "Johnny Fagundes"
+  ],
+  "tags": [
+    "qrcode",
+    "Johnny Fagundes"
+  ],
+  "version": "0.0.1",
+  "author": {
+    "name": "Johnny Fagundes Frota Santos",
+    "email": "fagundesjohnny@gmail.com",
+    "homepage": "https://github.com/johnnyfagundes"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
