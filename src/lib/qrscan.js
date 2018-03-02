@@ -8,12 +8,12 @@ QRReader.canvas = null;
 QRReader.ctx = null;
 QRReader.decoder = null;
 
-QRReader.setCanvas = () => {
+QRReader.setCanvas = function() {
 	QRReader.canvas = document.createElement("canvas");
 	QRReader.ctx = QRReader.canvas.getContext("2d");
 }
 
-QRReader.init = () => {
+QRReader.init = function() {
 	var baseurl = "";
 	var streaming = false;
 
