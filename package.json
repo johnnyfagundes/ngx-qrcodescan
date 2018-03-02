@@ -1,5 +1,5 @@
 {
-  "name": "ngx-qrscan",
+  "name": "ngx-qrcodescan",
   "license": "MIT",
   "description": "System to read qr code",
   "readmeFilename": "README.md",

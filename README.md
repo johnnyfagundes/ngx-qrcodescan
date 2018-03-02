@@ -1,2 +1,2 @@
-# ngx-qrscan
-Tool to reading qr code
+# ngx-qrcodescan
+Scanner to read Qr Code fast

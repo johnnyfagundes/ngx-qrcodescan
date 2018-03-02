@@ -1,5 +1,3 @@
-// import {snackbar} from "./snackbar.js";
-
 var QRReader = {};
 
 QRReader.active = false;

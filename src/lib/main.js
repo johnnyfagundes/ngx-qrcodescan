@@ -1,6 +1,3 @@
-import QRReader from './qrscan_old.js';
-import {snackbar} from './snackbar.js';
-// import styles from '../css/styles.css';
 import isURL from 'is-url';
 
 //If service worker is installed, show offline usage notification
@@ -8,7 +5,6 @@ if ("serviceWorker" in navigator) {
   navigator.serviceWorker.ready.then((registration) => {
     if (!localStorage.getItem("offline")) {
       localStorage.setItem("offline", true);
-      snackbar.show('App is ready for offline usage.', 5000);
     }
   });
 }
