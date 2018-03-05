@@ -9,19 +9,15 @@ export class NgxQrcodescanService {
     }
 
     public start() {
-        console.log('service scan');
         QRReader.init();
-        setTimeout(() => {
-            QRReader.scan();
-        }, 1000);
     }
 
     public stop() {
-        let track = QRReader.webcam.srcObject.getTracks()[0];
+        const track: any = QRReader.webcam.srcObject.getTracks()[0];
         track.stop();
     }
 
-    public result (): any {
-       return QRReader.scan;
+    public getQrReader() {
+      return QRReader;
     }
 }
