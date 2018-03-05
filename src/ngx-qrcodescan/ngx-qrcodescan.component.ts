@@ -108,10 +108,10 @@ export class NgxQrcodescanComponent implements OnInit {
   public scan() {
     setTimeout(() => {
       this.ngxService.getQrReader().scan((result) => {
-        console.log(result);
         this.result.emit(result);
         if (!this.stopAfterScan) {
           this.scan();
+          return;
         }
         this.ngxService.stop();
         this.boxRoot.nativeElement.classList.add('ngx-scanner-hide');
