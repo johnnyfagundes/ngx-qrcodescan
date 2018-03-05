@@ -9,8 +9,7 @@ QRReader.decoder = null;
 QRReader.setCanvas = function() {
 	QRReader.canvas = document.createElement("canvas");
 	QRReader.ctx = QRReader.canvas.getContext("2d");
-}
-
+};
 QRReader.init = function() {
 	var baseurl = "";
 	var streaming = false;
@@ -51,8 +50,7 @@ QRReader.init = function() {
 				QRReader.webcam.srcObject = stream;
 			})
 			.catch(function(err) {
-				console.log("Error occurred ", err);
-				showErrorMsg();
+				alert("Error occurred ", err);
 			});
 	}
 
@@ -95,17 +93,10 @@ QRReader.init = function() {
 				}
 			})
 			.catch(function (error) {
-				showErrorMsg();
-				console.error("Error occurred : ", error);
+				alert("Error occurred : ", error);
 			});
 	}
-
-	function showErrorMsg() {
-		document.querySelector('.app__overlay').style.display = "none";
-		document.querySelector('.app__header-icon svg').style.fill = '#212121';
-		snackbar.show('Unable to open the camera, provide permission to access the camera', 10000);
-	}
-}
+};
 
 /**
  * \brief QRReader Scan Action
@@ -144,6 +135,5 @@ QRReader.scan = function (callback) {
 		}
 	}
 	newDecoderFrame();
-}
-
+};
 module.exports = QRReader;
