@@ -1,34 +1,4 @@
 {
-  "_from": "ngx-qrcodescan",
-  "_id": "ngx-qrcodescanner@0.0.2",
-  "_inBundle": false,
-  "_integrity": "sha512-Q6QgDMI4iv0ZkRSf+HbMWpSAzwuCWTVbT2Ld8Fx2puK0GK7ZQHKpA8e78/SBuEtKaD63zMTRQ6cABY+ShkNjMg==",
-  "_location": "/ngx-qrcodescanner",
-  "_phantomChildren": {
-    "tslib": "1.7.1"
-  },
-  "_requested": {
-    "type": "tag",
-    "registry": true,
-    "raw": "ngx-qrcodescanner",
-    "name": "ngx-qrcodescanner",
-    "escapedName": "ngx-qrcodescanner",
-    "rawSpec": "",
-    "saveSpec": null,
-    "fetchSpec": "latest"
-  },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "https://registry.npmjs.org/ngx-qrcodescanner/-/ngx-qrcodescanner-0.0.1.tgz",
-  "_shasum": "0147819e62c88a962a18feff3b3173599474c86c",
-  "_spec": "ngx-qrcodescanner",
-  "_where": "C:\\Projetos\\web-eventos\\source",
-  "author": {
-    "name": "Johnny Fagundes Frota Santos",
-    "email": "fagundesjohnny@gmail.com"
-  },
   "bundleDependencies": false,
   "dependencies": {
     "@angular/animations": "^5.2.0",
@@ -75,7 +45,7 @@
     "Johnny Fagundes"
   ],
   "license": "MIT",
-  "name": "ngx-qrcodescanner",
+  "name": "ngx-qrcodescan",
   "private": false,
   "scripts": {
     "build": "ng build --prod",
@@ -89,5 +59,5 @@
     "qrcode",
     "Johnny Fagundes"
   ],
-  "version": "0.0.1"
+  "version": "0.0.2"
 }
