@@ -1,6 +1,6 @@
 {
-  "_from": "ngx-qrcodescanner",
-  "_id": "ngx-qrcodescanner@0.0.1",
+  "_from": "ngx-qrcodescan",
+  "_id": "ngx-qrcodescanner@0.0.2",
   "_inBundle": false,
   "_integrity": "sha512-Q6QgDMI4iv0ZkRSf+HbMWpSAzwuCWTVbT2Ld8Fx2puK0GK7ZQHKpA8e78/SBuEtKaD63zMTRQ6cABY+ShkNjMg==",
   "_location": "/ngx-qrcodescanner",
